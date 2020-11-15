@@ -6,7 +6,7 @@ function Footer() {
         <div className="padding-zero">
             <footer className="footer">
                 <p className="footer-company-name">
-                    Chat-bot &copy; 2020
+                    Smart-chatbot &copy; 2020
                 </p>
             </footer>
         </div>
