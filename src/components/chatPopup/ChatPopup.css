@@ -1,0 +1,133 @@
+/* Start chat */
+.start-chat {
+   border-radius: 50%;
+   background: #fff;
+   padding: 0 0 0 0;
+   border: 1px solid lightgray;
+   box-sizing: border-box;
+   box-shadow: 0 5px 25px 0 rgba(0,0,0,.13);
+   bottom: 10px;
+   position: fixed;
+   right: 25px;
+   font-size: 42px;
+   cursor: pointer;
+   z-index: 999;
+   height: 50px;
+   width: 50px;
+   border: 1px solid #000;
+}
+.start-chat i {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-size: 20px;
+}
+
+ /* Popup-box related */
+.chat-popup-box {
+   background-color: #ffffff;
+   border: 1px solid #b0b0b0;
+   bottom: 68px;
+   height: 580px;
+   position: fixed;
+   right: 25px;
+   width: 400px;
+   font-family: 'Open Sans', sans-serif;
+   z-index: 999;
+   box-shadow: 0 5px 25px 0 rgba(0,0,0,.13);
+
+   visibility:hidden;
+   opacity:0;
+   transition:visibility 0.3s ease-in-out,opacity 0.3s linear;
+ }
+
+ .display-chat-popup-box {
+   visibility:visible;
+   opacity:1;
+ }
+
+
+ /* Header related */
+.chat-popup-box .chat-popup-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b0b0b0;
+    padding: 14px;
+}
+.chat-popup-box .chat-popup-header .smart-bot {
+   color: navy;
+}
+.chat-popup-box .chat-popup-header .refresh{
+   color: red;
+   cursor: pointer;
+}
+
+
+/* Messages related */
+ .chat-popup-box .chat-popup-messages {
+   background: #f1f1f1 none repeat scroll 0 0;
+   height: 463px;
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   overflow-y: scroll;
+   overflow-x: hidden;
+ }
+
+
+/* Footer related */
+ .chat-popup-box .chat-popup-footer {
+   bottom: 0;
+   position: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+ .chat-popup-box .chat-popup-footer > input {
+    height: 48px;
+    margin: 7px;
+    padding: 5px;
+    border: medium none;
+    width: 90%;
+    outline: none;
+    font-size: 16px;
+}
+.chat-popup-box .chat-popup-footer > i {
+   margin-top: 16px;
+   font-size: 26px;
+   text-align: center;
+   cursor: pointer;
+   margin-right: 9px;
+}
+
+
+/* Placeholder related CSS */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: #d4d4d4;
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: #d4d4d4;
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: #d4d4d4;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #d4d4d4;
+}
+
+
+/* Icon coloring */
+.fa-robot {
+   color: midnightblue;
+}
+
+.fa-times {
+   color: red;
+}
+
+.fa-redo {
+   color: violet;
+}
